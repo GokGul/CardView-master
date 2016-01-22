@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
+    //boyk?
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
