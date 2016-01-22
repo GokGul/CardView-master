@@ -7,26 +7,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="domain.fake.cardview.Login">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Login"
-        android:id="@+id/txt_login"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp" />
+    tools:context="domain.fake.cardview.Login"
+    android:background="#eeeeee">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_username"
-        android:layout_below="@+id/txt_login"
+        android:hint="Username"
+        android:layout_below="@+id/imageView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Username"/>
+        android:layout_marginTop="10dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -34,22 +26,22 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/txt_password"
+        android:layout_alignParentStart="true"
+        android:hint="Password"
         android:layout_below="@+id/txt_username"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="5dp"
-        android:hint="Password"/>
+        android:layout_marginTop="5dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/btn_login"
-        android:layout_below="@+id/txt_password"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:onClick="loginUser"/>
+        android:onClick="loginUser"
+        android:layout_below="@+id/txt_password"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,11 +49,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Haven&apos;t joined us yet?"
         android:id="@+id/lbl_join"
-        android:layout_marginTop="36dp"
         android:layout_below="@+id/btn_login"
-        android:layout_alignRight="@+id/txt_login"
-        android:layout_alignEnd="@+id/txt_login"
-        android:layout_marginLeft="15dp"/>
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,10 +60,19 @@
         android:text="Register"
         android:id="@+id/txt_register"
         android:textColor="@color/colorPrimary"
-        android:layout_alignTop="@+id/lbl_join"
+        android:onClick="register"
+        android:layout_below="@+id/btn_login"
         android:layout_toRightOf="@+id/lbl_join"
         android:layout_toEndOf="@+id/lbl_join"
-        android:layout_marginLeft="5dp"
-        android:onClick="register"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/papurrless_logo" />
 
 </RelativeLayout>

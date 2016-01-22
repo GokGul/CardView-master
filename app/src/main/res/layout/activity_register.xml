@@ -7,55 +7,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="domain.fake.cardview.Register">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Register"
-        android:id="@+id/txt_register"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="93dp" />
+    tools:context="domain.fake.cardview.Register"
+    android:background="#eeeeee">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_username"
-        android:layout_below="@+id/txt_register"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:hint="Username"/>
+        android:hint="Username"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:id="@+id/txt_password"
+        android:hint="Password"
         android:layout_below="@+id/txt_username"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:hint="Password"/>
+        android:layout_alignParentLeft="true" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:id="@+id/txt_password2"
+        android:hint="Retype Password"
         android:layout_below="@+id/txt_password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:hint="Password"/>
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/btn_register"
+        android:onClick="registerUser"
         android:layout_below="@+id/txt_password2"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:onClick="registerUser"/>
+        android:background="@drawable/papurrless_logo" />
 
 </RelativeLayout>
